@@ -24,7 +24,7 @@ export default function ContactPage() {
         <div id="nav" data-section="nav">
           <NavbarStyleApple
             navItems={[
-              { name: "Services", id: "/#freight" },
+              { name: "Services", id: "/services" },
               { name: "How It Works", id: "/how-it-works" },
               { name: "Shipment Specs", id: "/#specs" },
               { name: "Contact", id: "/contact" },
@@ -46,7 +46,7 @@ export default function ContactPage() {
         <div id="footer" data-section="footer">
           <FooterSimple
             columns={[
-              { title: "Company", items: [{ label: "About Us", href: "#" }, { label: "Services", href: "/#freight" }] },
+              { title: "Company", items: [{ label: "About Us", href: "#" }, { label: "Services", href: "/services" }] },
               { title: "Legal", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms", href: "#" }] },
             ]}
             bottomLeftText="© 2026 Sir James Delivery Company."

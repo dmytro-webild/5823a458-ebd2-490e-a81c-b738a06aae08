@@ -3,10 +3,10 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
+import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 
-export default function HowItWorksPage() {
+export default function ServicesPage() {
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -33,21 +33,20 @@ export default function HowItWorksPage() {
           />
         </div>
 
-        <div id="blueprint" data-section="blueprint">
-            <MetricSplitMediaAbout
+        <div id="services" data-section="services">
+          <FeatureCardTwentyNine
+            title="Our Services"
+            description="Expert freight forwarding and secure logistics tailored to your needs from Dubai to Ghana."
+            gridVariant="bento-grid"
+            animationType="slide-up"
+            textboxLayout="split"
             useInvertedBackground={false}
-            title="Shipping From Dubai to Ghana in 2 Easy Steps"
-            description="Our streamlined process ensures maximum security and efficiency."
-            metrics={[
-                { value: "1", title: "Hub Delivery" },
-                { value: "2", title: "Secure Transit" },
-                { value: "3", title: "Ghana Pickup" },
+            features={[
+              { title: "Luxury Shipping", description: "High-security transit for watches and premium goods.", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg", titleImageSrc: "", buttonText: "Learn More" },
+              { title: "Auto Logistics", description: "Specialized vehicle shipping with expert strapping.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg", titleImageSrc: "", buttonText: "Learn More" },
+              { title: "Industrial Cargo", description: "Heavy machinery and equipment handled with care.", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg", titleImageSrc: "", buttonText: "Learn More" }
             ]}
-            mediaAnimation="slide-up"
-            metricsAnimation="slide-up"
-            imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg"
-            imageAlt="Aerial view of a bridge over the creek"
-            />
+          />
         </div>
 
         <div id="footer" data-section="footer">

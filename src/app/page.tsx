@@ -7,7 +7,6 @@ import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroBillboardTestimonial from '@/components/sections/hero/HeroBillboardTestimonial';
-import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 
 export default function LandingPage() {
@@ -28,7 +27,7 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleApple
       navItems={[
-        { name: "Services", id: "#freight" },
+        { name: "Services", id: "/services" },
         { name: "How It Works", id: "/how-it-works" },
         { name: "Shipment Specs", id: "#specs" },
         { name: "Contact", id: "/contact" },
@@ -110,7 +109,7 @@ export default function LandingPage() {
   <div id="footer" data-section="footer">
       <FooterSimple
       columns={[
-        { title: "Company", items: [{ label: "About Us", href: "#" }, { label: "Services", href: "#freight" }] },
+        { title: "Company", items: [{ label: "About Us", href: "#" }, { label: "Services", href: "/services" }] },
         { title: "Legal", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms", href: "#" }] },
       ]}
       bottomLeftText="© 2026 Sir James Delivery Company."

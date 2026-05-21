@@ -87,7 +87,7 @@ export default function LandingPage() {
           { value: "3", title: "Ghana Arrival" }
       ]}
       mediaAnimation="slide-up"
-      imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg?_wi=1"
       imageAlt="Streamlined shipping process overview"
     />
   </div>

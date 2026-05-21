@@ -29,7 +29,7 @@ export default function LandingPage() {
       <NavbarStyleApple
       navItems={[
         { name: "Services", id: "#freight" },
-        { name: "How It Works", id: "#blueprint" },
+        { name: "How It Works", id: "/how-it-works" },
         { name: "Shipment Specs", id: "#specs" },
         { name: "Contact", id: "/contact" },
       ]}
@@ -87,23 +87,6 @@ export default function LandingPage() {
       ]}
       title="We Ship the Spectrum."
       description="Large or Small, We Handle It All. Click for details."
-    />
-  </div>
-
-  <div id="blueprint" data-section="blueprint">
-      <MetricSplitMediaAbout
-      useInvertedBackground={false}
-      title="Shipping From Dubai to Ghana in 2 Easy Steps"
-      description="Our streamlined process ensures maximum security and efficiency."
-      metrics={[
-        { value: "1", title: "Hub Delivery" },
-        { value: "2", title: "Secure Transit" },
-        { value: "3", title: "Ghana Pickup" },
-      ]}
-      mediaAnimation="slide-up"
-      metricsAnimation="slide-up"
-      imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg"
-      imageAlt="Aerial view of a bridge over the creek"
     />
   </div>
 

@@ -41,8 +41,10 @@ export default function HowItWorksPage() {
             title="Shipping From Dubai to Ghana in 2 Easy Steps"
             description="Our streamlined process ensures maximum security and efficiency."
             metrics={[
-                { value: "1", title: "Hub Delivery" },
-                { value: "2", title: "Secure Transit" },
+                { value: "1", title: "Hub Delivery;You secure the goods; we take complete ownership.
+Drop your items off at our centralized Dubai hub, or have your UAE suppliers ship directly to our receiving depot. The moment your cargo arrives, our specialized team conducts an immediate premium inventory check, logs your items, and packages them into high-security, reinforced transit containers tailored to their specific category (from luxury timepieces to heavy gym equipment)." },
+                { value: "2", title: "Premium Transit & Secure Pickup;We handle the border logistics; you collect in Ghana.
+Your cargo is fast-tracked through air or sea transit under constant tracking and logistics surveillance. Our dedicated customs clearing desk manages 100% of the complex port paperwork and border clearance internally. Your goods travel straight to our private, secure warehouse facility in Ghana, fully processed and ready for a smooth, hassle-free pickup." },
                 { value: "3", title: "Ghana Pickup" },
             ]}
             mediaAnimation="slide-up"

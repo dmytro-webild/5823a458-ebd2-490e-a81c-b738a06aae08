@@ -180,7 +180,7 @@ export default function LandingPage() {
             "SUV",
             "Sedan",
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/two-workers-uniform-workers-with-tools-working-day_1157-46525.jpg",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg",
         },
         {
           id: "heavy",

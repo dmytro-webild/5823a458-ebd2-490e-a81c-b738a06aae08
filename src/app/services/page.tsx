@@ -3,10 +3,17 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
+import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 
 export default function ServicesPage() {
+  const navItems = [
+    { name: "Services", id: "/services" },
+    { name: "How It Works", id: "/how-it-works" },
+    { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
+    { name: "Contact", id: "/contact" },
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -23,28 +30,22 @@ export default function ServicesPage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
           <NavbarStyleApple
-            navItems={[
-              { name: "Services", id: "/services" },
-              { name: "How It Works", id: "/how-it-works" },
-              { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
-              { name: "Contact", id: "/contact" },
-            ]}
+            navItems={navItems}
             brandName="Sir James Delivery"
           />
         </div>
 
         <div id="services" data-section="services">
-          <FeatureCardTwentyNine
+          <FeatureCardTwentyFour
             title="Our Services"
             description="Expert freight forwarding and secure logistics tailored to your needs from Dubai to Ghana."
-            gridVariant="bento-grid"
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={false}
             features={[
-              { title: "Luxury Shipping", description: "High-security transit for watches and premium goods.", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" },
-              { title: "Auto Logistics", description: "Specialized vehicle shipping with expert strapping.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" },
-              { title: "Industrial Cargo", description: "Heavy machinery and equipment handled with care.", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" }
+              { id: "s1", title: "Luxury Shipping", author: "Secure transit", description: "High-security transit for watches and premium goods.", tags: ["Luxury"], imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=1" },
+              { id: "s2", title: "Auto Logistics", author: "Vehicle safety", description: "Specialized vehicle shipping with expert strapping.", tags: ["Vehicles"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=1" },
+              { id: "s3", title: "Industrial Cargo", author: "Heavy machinery", description: "Heavy machinery and equipment handled with care.", tags: ["Industrial"], imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=1" }
             ]}
           />
         </div>

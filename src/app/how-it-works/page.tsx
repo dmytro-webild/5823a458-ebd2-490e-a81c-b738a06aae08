@@ -26,7 +26,7 @@ export default function HowItWorksPage() {
             navItems={[
               { name: "Services", id: "/services" },
               { name: "How It Works", id: "/how-it-works" },
-              { name: "Shipment Specs", id: "/#specs" },
+              { name: "Transit Guarantee", id: "/the-sir-james-transit-guarantee" },
               { name: "Contact", id: "/contact" },
             ]}
             brandName="Sir James Delivery"

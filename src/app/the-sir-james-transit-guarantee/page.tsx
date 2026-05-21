@@ -2,11 +2,11 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
+import LegalSection from '@/components/legal/LegalSection';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 
-export default function ServicesPage() {
+export default function TransitGuaranteePage() {
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -33,18 +33,16 @@ export default function ServicesPage() {
           />
         </div>
 
-        <div id="services" data-section="services">
-          <FeatureCardTwentyNine
-            title="Our Services"
-            description="Expert freight forwarding and secure logistics tailored to your needs from Dubai to Ghana."
-            gridVariant="bento-grid"
-            animationType="slide-up"
-            textboxLayout="split"
-            useInvertedBackground={false}
-            features={[
-              { title: "Luxury Shipping", description: "High-security transit for watches and premium goods.", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" },
-              { title: "Auto Logistics", description: "Specialized vehicle shipping with expert strapping.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" },
-              { title: "Industrial Cargo", description: "Heavy machinery and equipment handled with care.", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" }
+        <div id="legal" data-section="legal">
+          <LegalSection
+            layout="page"
+            title="The Sir James Transit Guarantee"
+            sections={[
+              {
+                heading: "Our Commitment",                content: {
+                  type: "paragraph",                  text: "At Sir James Delivery Company, we eliminate the anxiety of international shipping. Every single consignment—whether it is an exclusive luxury timepiece, fragile perfumes, or multi-ton industrial gym machinery—is backed by our zero-damage, clear-pricing commitment. From the exact moment your goods are cataloged at our Dubai hub to the second they are safely received at our secure warehouse in Ghana, your cargo is fully insured, monitored under strict logistics surveillance, and processed with 100% customs clearance. If we receive it in Dubai, you will collect it in Ghana in pristine condition. No exceptions, no hidden fees, no delays."
+                }
+              }
             ]}
           />
         </div>

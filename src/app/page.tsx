@@ -78,7 +78,7 @@ export default function LandingPage() {
   <div id="process" data-section="process">
     <MetricSplitMediaAbout
       useInvertedBackground={false}
-      title="Streamlined Shipping Process"
+      title=" Shipping from Dubai to Ghana in 2 simple steps"
       description="Our streamlined process ensures maximum security and efficiency for all your cargo."
       metrics={[
           { value: "1", title: "Hub Collection" },

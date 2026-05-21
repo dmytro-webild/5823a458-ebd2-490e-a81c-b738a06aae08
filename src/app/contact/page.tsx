@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCenter from '@/components/sections/contact/ContactCenter';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 
@@ -36,10 +36,8 @@ export default function ContactPage() {
         </div>
 
         <div id="contact" data-section="contact">
-          <ContactCenter
+          <ContactSplitForm
             useInvertedBackground={false}
-            background={{ variant: "plain" }}
-            tag="Stay Connected"
             title="Contact Us"
             description="whatsapp contact: +233241851752 | call now: +971526377145 | Email: narhjames@gmail.com"
             inputs={[{ name: "name", type: "text", placeholder: "Full Name" }, { name: "email", type: "email", placeholder: "Email Address" }]} 

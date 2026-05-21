@@ -103,6 +103,10 @@ export default function LandingPage() {
       faqsAnimation="slide-up"
       imageSrc="http://img.b2bpic.net/free-photo/man-driving-warehouse-loading-machine_23-2148923134.jpg"
       imageAlt="Man driving warehouse loading machine"
+      mediaAnimation="slide-up"
+      mediaPosition="left"
+      textboxLayout="split"
+      useInvertedBackground={false}
     />
   </div>
 

@@ -7,6 +7,13 @@ import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaA
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 
 export default function HowItWorksPage() {
+  const navItems = [
+    { name: "Services", id: "/services" },
+    { name: "How It Works", id: "/how-it-works" },
+    { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
+    { name: "Contact", id: "/contact" },
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -23,12 +30,7 @@ export default function HowItWorksPage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
           <NavbarStyleApple
-            navItems={[
-              { name: "Services", id: "/services" },
-              { name: "How It Works", id: "/how-it-works" },
-              { name: "Shipment Specs", id: "/#specs" },
-              { name: "Contact", id: "/contact" },
-            ]}
+            navItems={navItems}
             brandName="Sir James Delivery"
           />
         </div>

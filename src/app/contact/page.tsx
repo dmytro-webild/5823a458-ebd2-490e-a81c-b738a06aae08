@@ -7,6 +7,13 @@ import FooterSimple from '@/components/sections/footer/FooterSimple';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 
 export default function ContactPage() {
+  const navItems = [
+    { name: "Services", id: "/services" },
+    { name: "How It Works", id: "/how-it-works" },
+    { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
+    { name: "Contact", id: "/contact" },
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -23,12 +30,7 @@ export default function ContactPage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
           <NavbarStyleApple
-            navItems={[
-              { name: "Services", id: "/services" },
-              { name: "How It Works", id: "/how-it-works" },
-              { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
-              { name: "Contact", id: "/contact" },
-            ]}
+            navItems={navItems}
             brandName="Sir James Delivery"
           />
         </div>
@@ -40,6 +42,7 @@ export default function ContactPage() {
             tag="Stay Connected"
             title="Contact Us"
             description="whatsapp contact: +233241851752 | call now: +971526377145 | Email: narhjames@gmail.com"
+            inputs={[{ name: "name", type: "text", placeholder: "Full Name" }, { name: "email", type: "email", placeholder: "Email Address" }]} 
           />
         </div>
 

@@ -2,11 +2,11 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCenter from '@/components/sections/contact/ContactCenter';
-import FooterSimple from '@/components/sections/footer/FooterSimple';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
 
-export default function ContactPage() {
+export default function HowItWorksPage() {
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -33,14 +33,21 @@ export default function ContactPage() {
           />
         </div>
 
-        <div id="contact" data-section="contact">
-          <ContactCenter
+        <div id="blueprint" data-section="blueprint">
+            <MetricSplitMediaAbout
             useInvertedBackground={false}
-            background={{ variant: "plain" }}
-            tag="Stay Connected"
-            title="Contact Us"
-            description="whatsapp contact: +233241851752 | call now: +971526377145 | Email: narhjames@gmail.com"
-          />
+            title="Shipping From Dubai to Ghana in 2 Easy Steps"
+            description="Our streamlined process ensures maximum security and efficiency."
+            metrics={[
+                { value: "1", title: "Hub Delivery" },
+                { value: "2", title: "Secure Transit" },
+                { value: "3", title: "Ghana Pickup" },
+            ]}
+            mediaAnimation="slide-up"
+            metricsAnimation="slide-up"
+            imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg"
+            imageAlt="Aerial view of a bridge over the creek"
+            />
         </div>
 
         <div id="footer" data-section="footer">

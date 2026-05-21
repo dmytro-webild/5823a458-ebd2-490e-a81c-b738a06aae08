@@ -2,10 +2,9 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCenter from '@/components/sections/contact/ContactCenter';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
-import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroBillboardTestimonial from '@/components/sections/hero/HeroBillboardTestimonial';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 
@@ -105,8 +104,6 @@ export default function LandingPage() {
       imageAlt="Man driving warehouse loading machine"
       mediaAnimation="slide-up"
       mediaPosition="left"
-      textboxLayout="split"
-      useInvertedBackground={false}
     />
   </div>
 

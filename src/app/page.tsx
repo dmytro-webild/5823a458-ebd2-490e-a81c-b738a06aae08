@@ -10,6 +10,13 @@ import HeroBillboardTestimonial from '@/components/sections/hero/HeroBillboardTe
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 
 export default function LandingPage() {
+  const navItems = [
+    { name: "Services", id: "/services" },
+    { name: "How It Works", id: "/how-it-works" },
+    { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
+    { name: "Contact", id: "/contact" },
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -26,12 +33,7 @@ export default function LandingPage() {
       <ReactLenis root>
   <div id="nav" data-section="nav">
       <NavbarStyleApple
-      navItems={[
-        { name: "Services", id: "/services" },
-        { name: "How It Works", id: "/how-it-works" },
-        { name: "Shipment Specs", id: "#specs" },
-        { name: "Contact", id: "/contact" },
-      ]}
+      navItems={navItems}
       brandName="Sir James Delivery"
     />
   </div>
@@ -51,7 +53,7 @@ export default function LandingPage() {
       ]}
       tag="Daily Shipments • Fully Insured • 100% Customs Cleared"
       buttons={[
-        { text: "Read Transit Guarantee", href: "#why" },
+        { text: "Read Transit Guarantee", href: "/the-sir-james-transit-guarantee" },
         { text: "Contact", href: "/contact" },
       ]}
       imageSrc="http://img.b2bpic.net/free-photo/technological-futuristic-holograms-logistics-means-transport_23-2151663056.jpg"

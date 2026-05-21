@@ -3,10 +3,10 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 
-export default function ServicesPage() {
+export default function GalleryPage() {
   const navItems = [
     { name: "Services", id: "/services" },
     { name: "How It Works", id: "/how-it-works" },
@@ -36,18 +36,13 @@ export default function ServicesPage() {
           />
         </div>
 
-        <div id="services" data-section="services">
-          <FeatureCardTwentyFour
-            title="Our Services"
-            description="Expert freight forwarding and secure logistics tailored to your needs from Dubai to Ghana."
-            animationType="slide-up"
-            textboxLayout="split"
+        <div id="gallery" data-section="gallery" className="py-20">
+          <ContactSplitForm
             useInvertedBackground={false}
-            features={[
-              { id: "s1", title: "Luxury Shipping", author: "Secure transit", description: "High-security transit for watches and premium goods.", tags: ["Luxury"], imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=1" },
-              { id: "s2", title: "Auto Logistics", author: "Vehicle safety", description: "Specialized vehicle shipping with expert strapping.", tags: ["Vehicles"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=1" },
-              { id: "s3", title: "Industrial Cargo", author: "Heavy machinery", description: "Heavy machinery and equipment handled with care.", tags: ["Industrial"], imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=1" }
-            ]}
+            title="Upload Cargo Photos"
+            description="Document your container packing process by uploading photos here. Please include your tracking ID in the message."
+            inputs={[{ name: "name", type: "text", placeholder: "Full Name" }, { name: "id", type: "text", placeholder: "Tracking ID" }]}
+            textarea={{ name: "comment", placeholder: "Add photo descriptions...", rows: 5 }}
           />
         </div>
 

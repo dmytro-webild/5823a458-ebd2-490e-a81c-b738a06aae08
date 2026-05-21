@@ -42,9 +42,9 @@ export default function ServicesPage() {
             textboxLayout="split"
             useInvertedBackground={false}
             features={[
-              { title: "Luxury Shipping", description: "High-security transit for watches and premium goods.", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg", titleImageSrc: "", buttonText: "Learn More" },
-              { title: "Auto Logistics", description: "Specialized vehicle shipping with expert strapping.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg", titleImageSrc: "", buttonText: "Learn More" },
-              { title: "Industrial Cargo", description: "Heavy machinery and equipment handled with care.", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg", titleImageSrc: "", buttonText: "Learn More" }
+              { title: "Luxury Shipping", description: "High-security transit for watches and premium goods.", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" },
+              { title: "Auto Logistics", description: "Specialized vehicle shipping with expert strapping.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" },
+              { title: "Industrial Cargo", description: "Heavy machinery and equipment handled with care.", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=1", titleImageSrc: "", buttonText: "Learn More" }
             ]}
           />
         </div>

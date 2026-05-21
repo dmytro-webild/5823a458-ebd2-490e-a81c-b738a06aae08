@@ -81,8 +81,8 @@ export default function LandingPage() {
       title=" Shipping from Dubai to Ghana in 2 simple steps"
       description="Our streamlined process ensures maximum security and efficiency for all your cargo."
       metrics={[
-          { value: "1", title: "Hub Collection" },
-          { value: "2", title: "Secure Transit" },
+          { value: "1", title: "Hub Collection,Deliver your goods or have your suppliers ship directly to our Dubai receiving hub. We immediately inspect, inventory, and securely pack your cargo into specialized transit containers." },
+          { value: "2", title: "Secure Transit,We handle the global transit, tracking, and 100% of the customs clearance paperwork. Your pristine cargo goes straight to our private Ghana warehouse, ready for hassle-free collection." },
           { value: "3", title: "Ghana Arrival" }
       ]}
       mediaAnimation="slide-up"

@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
-import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
+import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 
 export default function GalleryPage() {
   const navItems = [
@@ -37,12 +37,17 @@ export default function GalleryPage() {
         </div>
 
         <div id="gallery" data-section="gallery" className="py-20">
-          <ContactSplitForm
+          <FeatureCardTwentyFour
+            animationType="slide-up"
+            textboxLayout="split"
             useInvertedBackground={false}
-            title="Upload Cargo Photos"
-            description="Document your container packing process by uploading photos here. Please include your tracking ID in the message."
-            inputs={[{ name: "name", type: "text", placeholder: "Full Name" }, { name: "id", type: "text", placeholder: "Tracking ID" }]}
-            textarea={{ name: "comment", placeholder: "Add photo descriptions...", rows: 5 }}
+            title="Cargo Packing Gallery"
+            description="See how we professionally secure your items for the journey from Dubai to Ghana."
+            features={[
+              { id: "g1", title: "Luxury Protection", author: "Security", description: "High-grade crates for luxury goods.", tags: ["Luxury"], imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
+              { id: "g2", title: "Vehicle Securement", author: "Logistics", description: "Professional strapping for vehicles.", tags: ["Auto"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
+              { id: "g3", title: "Heavy Gear", author: "Industrial", description: "Robust loading techniques for machinery.", tags: ["Industrial"], imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" }
+            ]}
           />
         </div>
 

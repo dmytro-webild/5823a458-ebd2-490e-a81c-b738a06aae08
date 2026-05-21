@@ -74,14 +74,14 @@ export default function LandingPage() {
         },
         {
           name: "John S.",
-          handle: "@auto_trader",
+          handle: "",
           testimonial: "Vehicle transport from Dubai was seamless and fast.",
           rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662944.jpg",
         },
         {
           name: "Sarah L.",
-          handle: "@gym_pro",
+          handle: "",
           testimonial: "Great handling of industrial gym machines. Very professional.",
           rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/top-view-empty-perfume-bottle_23-2149234340.jpg",
@@ -202,7 +202,7 @@ export default function LandingPage() {
             "Wholesale",
             "Stock",
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/wood-pallet-cargo-freight-industry-load-logistic_53876-139691.jpg",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/tmp/hyper-realistic-picture-of-a-cargo-conta-1779315244636-c2b3304a.png",
         },
       ]}
       title="We Ship the Spectrum."
@@ -213,7 +213,7 @@ export default function LandingPage() {
   <div id="blueprint" data-section="blueprint">
       <MetricSplitMediaAbout
       useInvertedBackground={false}
-      title="Shipping From Dubai to Ghana in 3 Easy Steps"
+      title="Shipping From Dubai to Ghana in 2 Easy Steps"
       description="Our streamlined process ensures maximum security and efficiency."
       metrics={[
         {
@@ -272,8 +272,8 @@ export default function LandingPage() {
         variant: "plain",
       }}
       tag="Stay Connected"
-      title="Official Contact & Branch Details"
-      description="Ghana Phone: +233241851752 | Dubai WhatsApp: +971526377145 | Email: narhjames@gmail.com"
+      title="Official Contact  Details"
+      description="whatsapp contact: +233241851752 | call now: +971526377145 | Email: narhjames@gmail.com"
     />
   </div>
 

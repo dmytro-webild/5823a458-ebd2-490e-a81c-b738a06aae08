@@ -48,7 +48,7 @@ export default function HowItWorksPage() {
             ]}
             mediaAnimation="slide-up"
             metricsAnimation="slide-up"
-            imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg"
+            imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg?_wi=2"
             imageAlt="Aerial view of a bridge over the creek"
             />
         </div>

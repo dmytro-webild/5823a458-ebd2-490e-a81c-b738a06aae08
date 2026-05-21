@@ -25,7 +25,7 @@ export default function ContactPage() {
           <NavbarStyleApple
             navItems={[
               { name: "Services", id: "/#freight" },
-              { name: "How It Works", id: "/#blueprint" },
+              { name: "How It Works", id: "/how-it-works" },
               { name: "Shipment Specs", id: "/#specs" },
               { name: "Contact", id: "/contact" },
             ]}

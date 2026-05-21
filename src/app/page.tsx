@@ -2,13 +2,12 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCenter from '@/components/sections/contact/ContactCenter';
-import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
-import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroBillboardTestimonial from '@/components/sections/hero/HeroBillboardTestimonial';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
+import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
+import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 
 export default function LandingPage() {
   const navItems = [
@@ -82,9 +81,9 @@ export default function LandingPage() {
       title="Streamlined Shipping Process"
       description="Our streamlined process ensures maximum security and efficiency for all your cargo."
       metrics={[
-          { id: "p1", value: "1", title: "Hub Collection", description: "Secure drop-off at our Dubai hub with an immediate premium inventory audit." },
-          { id: "p2", value: "2", title: "Secure Transit", description: "Fast-tracked shipping under constant logistics surveillance and full border paperwork management." },
-          { id: "p3", value: "3", title: "Ghana Arrival", description: "Full processing at our private warehouse facility, ready for a seamless pickup." }
+          { value: "1", title: "Hub Collection" },
+          { value: "2", title: "Secure Transit" },
+          { value: "3", title: "Ghana Arrival" }
       ]}
       mediaAnimation="slide-up"
       imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg"

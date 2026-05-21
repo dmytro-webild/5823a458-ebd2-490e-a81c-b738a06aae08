@@ -50,10 +50,10 @@ export default function LandingPage() {
       description="Whether it’s luxury watches, vehicles, or heavy industrial gym machinery, Sir James Delivery Company safely transports your goods from the heart of Dubai straight to our secure warehouse in Ghana. No delays. No hidden fees."
       testimonials={[
         {
-          name: "Kwame O.",          handle: "@ghana_importer",          testimonial: "Excellent service. My heavy equipment arrived in perfect condition.",          rating: 5,
+          name: "Kwame O.",          handle: "",          testimonial: "Excellent service. My heavy equipment arrived in perfect condition.",          rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg"},
         {
-          name: "Amina B.",          handle: "@dubai_fashion",          testimonial: "The best shipping partner for my perfume wholesale business.",          rating: 5,
+          name: "Amina B.",          handle: "",          testimonial: "The best shipping partner for my perfume wholesale business.",          rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662916.jpg"},
         {
           name: "John S.",          handle: "",          testimonial: "Vehicle transport from Dubai was seamless and fast.",          rating: 5,
@@ -62,7 +62,7 @@ export default function LandingPage() {
           name: "Sarah L.",          handle: "",          testimonial: "Great handling of industrial gym machines. Very professional.",          rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/top-view-empty-perfume-bottle_23-2149234340.jpg"},
         {
-          name: "Michael D.",          handle: "@bulk_items",          testimonial: "Customs clearance was handled perfectly every time.",          rating: 5,
+          name: "Michael D.",          handle: "",          testimonial: "Customs clearance was handled perfectly every time.",          rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/single-glass-bottle-filled-with-clear-liquid-generated-by-ai_188544-19684.jpg"},
       ]}
       tag="Daily Shipments • Fully Insured • 100% Customs Cleared"

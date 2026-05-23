@@ -69,11 +69,11 @@ export default function LandingPage() {
         <div id="process" data-section="process">
           <MetricSplitMediaAbout
             useInvertedBackground={false}
-            title=" Shipping from Dubai to Ghana in 2 simple steps"
+            title="Shipping from Dubai to Ghana in 2 simple steps"
             description="Our streamlined process ensures maximum security and efficiency for all your cargo."
             metrics={[
-              { value: "1", title: "Hub Collection,Deliver your goods or have your suppliers ship directly to our Dubai receiving hub. We immediately inspect, inventory, and securely pack your cargo into specialized transit containers." },
-              { value: "2", title: "Secure Transit,We handle the global transit, tracking, and 100% of the customs clearance paperwork. Your pristine cargo goes straight to our private Ghana warehouse, ready for hassle-free collection." },
+              { value: "1", title: "Hub Collection" },
+              { value: "2", title: "Secure Transit" },
               { value: "3", title: "Ghana Arrival" }
             ]}
             mediaAnimation="slide-up"
@@ -87,7 +87,10 @@ export default function LandingPage() {
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={false}
-            features={[]}
+            features={[
+              { id: "f1", title: "Luxury Goods", author: "Security", description: "High-security transit for watches and premium goods.", tags: ["Luxury"], imageSrc: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=800" },
+              { id: "f2", title: "Auto Logistics", author: "Protection", description: "Specialized vehicle shipping with expert strapping.", tags: ["Vehicles"], imageSrc: "https://images.unsplash.com/photo-1594993875739-1661d92f22ad?q=80&w=800" }
+            ]}
             title="We Ship the Spectrum."
             description="Large or Small, We Handle It All. Click for details."
           />
@@ -97,7 +100,10 @@ export default function LandingPage() {
           <FaqSplitMedia
             textboxLayout="split"
             useInvertedBackground={false}
-            faqs={[]}
+            faqs={[
+              { id: "q1", title: "How safe are my goods?", content: "Every shipment is fully insured and tracked." },
+              { id: "q2", title: "Are there hidden fees?", content: "No. We provide clear pricing for all transit."}
+            ]}
             title="Operational Standards"
             description="Why choose Sir James Delivery?"
             faqsAnimation="slide-up"

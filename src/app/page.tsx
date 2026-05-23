@@ -8,7 +8,7 @@ import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleAp
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
-import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
+import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 
 export default function LandingPage() {
   const navItems = [
@@ -20,10 +20,10 @@ export default function LandingPage() {
   ];
 
   const galleryItems = [
-    { id: "p1", brand: "Logistics", name: "Heavy Duty Loading", price: "Secure", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
-    { id: "p2", brand: "Logistics", name: "Vehicle Securement", price: "Verified", rating: 5, reviewCount: "2026", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
-    { id: "p3", brand: "Logistics", name: "Industrial Machinery", price: "Handled", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
-    { id: "p4", brand: "Logistics", name: "Bulk Inventory", price: "Tracking", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg?_wi=1" }
+    { title: "Heavy Duty Loading", description: "Securing goods for transit", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
+    { title: "Vehicle Securement", description: "Professional loading standards", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
+    { title: "Industrial Machinery", description: "Handled with precision", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
+    { title: "Bulk Inventory", description: "Tracking every step", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg?_wi=1" }
   ];
 
   return (
@@ -134,14 +134,14 @@ export default function LandingPage() {
   </div>
 
   <div id="gallery" data-section="gallery" className="py-20">
-      <ProductCardTwo
+      <FeatureCardOne
         title="Professional Cargo Logistics"
-        description="An alternating grid showcase of our premium packing, loading, and tracking standards for Dubai to Ghana freight."
-        gridVariant="four-items-2x2-equal-grid"
+        description="A free-flowing view of our premium packing and logistics standards."
         animationType="slide-up"
+        gridVariant="three-columns-all-equal-width"
         textboxLayout="split"
         useInvertedBackground={false}
-        products={galleryItems}
+        features={galleryItems}
       />
   </div>
 

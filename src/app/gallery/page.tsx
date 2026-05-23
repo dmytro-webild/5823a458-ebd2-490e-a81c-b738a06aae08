@@ -9,14 +9,14 @@ import { useState } from 'react';
 
 export default function GalleryPage() {
   const [galleryItems] = useState([
-    { id: "1", title: "Secure Loading", content: "High-tech container loading processes", imageSrc: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&_wi=1" },
-    { id: "2", title: "Vehicle Transit", content: "Specialized vehicle securement techniques", imageSrc: "https://images.unsplash.com/photo-1553440150-13753a7b6832?q=80&w=800&_wi=1" },
-    { id: "3", title: "Industrial Handling", content: "Expert industrial gear management", imageSrc: "https://images.unsplash.com/photo-1621905251189-08b45d6a268e?q=80&w=800&_wi=1" },
-    { id: "4", title: "Bulk Logistics", content: "Streamlined commercial bulk transit", imageSrc: "https://images.unsplash.com/photo-1566585775320-f62266858276?q=80&w=800&_wi=1" },
-    { id: "5", title: "Dubai Hub", content: "Centralized receiving operations", imageSrc: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&_wi=1" },
-    { id: "6", title: "Precision Sorting", content: "Careful inventory management", imageSrc: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&_wi=1" },
-    { id: "7", title: "Ghana Warehouse", content: "Secure facility arrival process", imageSrc: "https://images.unsplash.com/photo-1587293852726-70b35612f843?q=80&w=800&_wi=1" },
-    { id: "8", title: "Global Tracking", content: "Constant logistics surveillance", imageSrc: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&_wi=1" }
+    { id: "1", title: "Secure Loading", content: "High-tech container loading processes" },
+    { id: "2", title: "Vehicle Transit", content: "Specialized vehicle securement techniques" },
+    { id: "3", title: "Industrial Handling", content: "Expert industrial gear management" },
+    { id: "4", title: "Bulk Logistics", content: "Streamlined commercial bulk transit" },
+    { id: "5", title: "Dubai Hub", content: "Centralized receiving operations" },
+    { id: "6", title: "Precision Sorting", content: "Careful inventory management" },
+    { id: "7", title: "Ghana Warehouse", content: "Secure facility arrival process" },
+    { id: "8", title: "Global Tracking", content: "Constant logistics surveillance" }
   ]);
 
   const navItems = [
@@ -54,6 +54,7 @@ export default function GalleryPage() {
               title="Our Logistics Gallery"
               description="A detailed look at each stage of our professional cargo handling process, presented individually for maximum visual impact."
               accordionItems={galleryItems}
+              videoSrc="https://www.w3schools.com/html/mov_bbb.mp4"
               mediaAnimation="blur-reveal"
               useInvertedBackground={false}
               containerClassName="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"

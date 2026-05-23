@@ -45,7 +45,7 @@ export default function GalleryPage() {
         </div>
 
         {galleryItems.map((item, index) => (
-          <div key={index} id={`gallery-${index}`} data-section="gallery" className="py-12 border-b border-gray-100">
+          <div key={index} id={`gallery-${index}`} data-section="gallery" className="py-24 border-b border-gray-100">
             <FeatureCardOne
               title={item.title}
               description={item.description}
@@ -54,8 +54,9 @@ export default function GalleryPage() {
               textboxLayout="split"
               useInvertedBackground={false}
               features={[item]}
-              gridClassName="gap-8"
-              cardClassName="min-h-[400px]"
+              containerClassName="max-w-7xl mx-auto px-6"
+              gridClassName="gap-12"
+              cardClassName="min-h-[500px]"
             />
           </div>
         ))}

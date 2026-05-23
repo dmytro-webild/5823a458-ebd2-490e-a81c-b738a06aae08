@@ -16,7 +16,13 @@ export default function GalleryPage() {
     { id: "5", title: "Dubai Hub", content: "Centralized receiving operations" },
     { id: "6", title: "Precision Sorting", content: "Careful inventory management" },
     { id: "7", title: "Ghana Warehouse", content: "Secure facility arrival process" },
-    { id: "8", title: "Global Tracking", content: "Constant logistics surveillance" }
+    { id: "8", title: "Global Tracking", content: "Constant logistics surveillance" },
+    { id: "9", title: "Automotive Strapping", content: "Detailed vehicle securement" },
+    { id: "10", title: "Heavy Gear Tie-down", content: "Heavy industrial machinery protocols" },
+    { id: "11", title: "Temperature Control", content: "Climate controlled shipping units" },
+    { id: "12", title: "Customs Processing", content: "Rapid port clearance documentation" },
+    { id: "13", title: "Inventory Scanning", content: "Barcode-based intake tracking" },
+    { id: "14", title: "Load Optimization", content: "Maximized container volumetric efficiency" }
   ]);
 
   const navItems = [

@@ -62,7 +62,7 @@ export default function LandingPage() {
               { text: "Read Transit Guarantee", href: "/the-sir-james-transit-guarantee" },
               { text: "Contact", href: "/contact" },
             ]}
-            imageSrc="http://img.b2bpic.net/free-photo/technological-futuristic-holograms-logistics-means-transport_23-2151663056.jpg"
+            imageSrc="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1200&_wi=2"
           />
         </div>
 
@@ -78,7 +78,7 @@ export default function LandingPage() {
             ]}
             mediaAnimation="slide-up"
             metricsAnimation="slide-up"
-            imageSrc="http://img.b2bpic.net/free-photo/aerial-view-bridge-creek-powerlines-with-cars-road_181624-24539.jpg?_wi=1"
+            imageSrc="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&_wi=2"
           />
         </div>
 
@@ -107,7 +107,7 @@ export default function LandingPage() {
             title="Operational Standards"
             description="Why choose Sir James Delivery?"
             faqsAnimation="slide-up"
-            imageSrc="http://img.b2bpic.net/free-photo/man-driving-warehouse-loading-machine_23-2148923134.jpg"
+            imageSrc="https://images.unsplash.com/photo-1589793466487-14e414c8d356?q=80&w=800"
           />
         </div>
 

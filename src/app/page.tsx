@@ -13,10 +13,14 @@ import { useState } from 'react';
 
 export default function LandingPage() {
   const [galleryItems] = useState([
-    { title: "Heavy Duty Loading", description: "Securing goods for transit", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
-    { title: "Vehicle Securement", description: "Professional loading standards", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
-    { title: "Industrial Machinery", description: "Handled with precision", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
-    { title: "Bulk Inventory", description: "Tracking every step", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg?_wi=1" }
+    { title: "Secure Loading", description: "High-tech container loading processes", imageSrc: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800" },
+    { title: "Vehicle Transit", description: "Specialized vehicle securement techniques", imageSrc: "https://images.unsplash.com/photo-1553440150-13753a7b6832?q=80&w=800" },
+    { title: "Industrial Handling", description: "Expert industrial gear management", imageSrc: "https://images.unsplash.com/photo-1621905251189-08b45d6a268e?q=80&w=800" },
+    { title: "Bulk Logistics", description: "Streamlined commercial bulk transit", imageSrc: "https://images.unsplash.com/photo-1566585775320-f62266858276?q=80&w=800" },
+    { title: "Dubai Hub", description: "Centralized receiving operations", imageSrc: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800" },
+    { title: "Precision Sorting", description: "Careful inventory management", imageSrc: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800" },
+    { title: "Ghana Warehouse", description: "Secure facility arrival process", imageSrc: "https://images.unsplash.com/photo-1587293852726-70b35612f843?q=80&w=800" },
+    { title: "Global Tracking", description: "Constant logistics surveillance", imageSrc: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800" }
   ]);
 
   const navItems = [

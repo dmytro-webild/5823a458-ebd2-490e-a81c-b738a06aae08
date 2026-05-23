@@ -9,21 +9,22 @@ import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaA
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardSix from '@/components/sections/feature/FeatureCardSix';
+import { useState } from 'react';
 
 export default function LandingPage() {
+  const [galleryItems] = useState([
+    { title: "Heavy Duty Loading", description: "Securing goods for transit", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
+    { title: "Vehicle Securement", description: "Professional loading standards", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
+    { title: "Industrial Machinery", description: "Handled with precision", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
+    { title: "Bulk Inventory", description: "Tracking every step", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg?_wi=1" }
+  ]);
+
   const navItems = [
     { name: "Services", id: "/services" },
     { name: "How It Works", id: "/how-it-works" },
     { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
     { name: "Gallery", id: "/gallery" },
     { name: "Contact", id: "/contact" },
-  ];
-
-  const galleryItems = [
-    { title: "Heavy Duty Loading", description: "Securing goods for transit", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
-    { title: "Vehicle Securement", description: "Professional loading standards", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
-    { title: "Industrial Machinery", description: "Handled with precision", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
-    { title: "Bulk Inventory", description: "Tracking every step", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg?_wi=1" }
   ];
 
   return (
@@ -148,7 +149,7 @@ export default function LandingPage() {
       <FooterSimple
       columns={[
         { title: "Company", items: [{ label: "About Us", href: "#" }, { label: "Services", href: "/services" }] },
-        { title: "Legal", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms", href: "#" }] },
+        { title: "Legal", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms", href: "/terms" }] },
       ]}
       bottomLeftText="© 2026 Sir James Delivery Company."
       bottomRightText="Safe. Swift. Secure."

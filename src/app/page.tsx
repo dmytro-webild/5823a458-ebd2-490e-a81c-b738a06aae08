@@ -138,6 +138,7 @@ export default function LandingPage() {
         title="Professional Cargo Logistics"
         description="A free-flowing view of our premium packing and logistics standards."
         animationType="slide-up"
+        carouselMode="auto"
         gridVariant="three-columns-all-equal-width"
         textboxLayout="split"
         useInvertedBackground={false}

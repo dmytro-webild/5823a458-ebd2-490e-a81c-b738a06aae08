@@ -49,6 +49,7 @@ export default function GalleryPage() {
             title="Professional Cargo Logistics"
             description="Our premium packing, loading, and tracking standards."
             gridVariant="three-columns-all-equal-width"
+            carouselMode="auto"
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={false}

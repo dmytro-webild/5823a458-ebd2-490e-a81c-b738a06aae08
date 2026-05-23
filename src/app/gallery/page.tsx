@@ -5,7 +5,6 @@ import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
-import ButtonTextShift from '@/components/button/ButtonTextShift/ButtonTextShift';
 
 export default function GalleryPage() {
   const navItems = [
@@ -43,11 +42,9 @@ export default function GalleryPage() {
             textboxLayout="split-actions"
             useInvertedBackground={false}
             title="Cargo Packing Gallery"
-            description="See how we professionally secure your items for the journey from Dubai to Ghana."
+            description="See how we professionally secure your items for the journey from Dubai to Ghana. Site administrators can upload new images directly below."
             buttons={[
-              { text: "Upload Image 1", onClick: () => console.log("Upload 1") },
-              { text: "Upload Image 2", onClick: () => console.log("Upload 2") },
-              { text: "Upload Image 3", onClick: () => console.log("Upload 3") }
+              { text: "Upload Image", onClick: () => alert("Admin Access Required: This feature connects to the secure media management dashboard.") }
             ]}
             features={[
               { id: "g1", title: "Luxury Protection", author: "Security", description: "High-grade crates for luxury goods.", tags: ["Luxury"], imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },

@@ -12,7 +12,6 @@ export default function ContactPage() {
     { name: "How It Works", id: "/how-it-works" },
     { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
     { name: "Gallery", id: "/gallery" },
-    { name: "Loading Gallery", id: "/loading-gallery" },
     { name: "Contact", id: "/contact" },
   ];
 

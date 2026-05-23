@@ -139,7 +139,7 @@ export default function LandingPage() {
         description="A free-flowing, spacious view of our premium packing and logistics standards."
         animationType="slide-up"
         carouselMode="buttons"
-        gridVariant="bento-grid"
+        gridVariant="uniform-all-items-equal"
         textboxLayout="split"
         useInvertedBackground={false}
         features={galleryItems}

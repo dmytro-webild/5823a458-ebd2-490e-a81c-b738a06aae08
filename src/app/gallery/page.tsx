@@ -54,7 +54,7 @@ export default function GalleryPage() {
               title="Our Logistics Gallery"
               description="A detailed look at each stage of our professional cargo handling process, presented individually for maximum visual impact."
               accordionItems={galleryItems}
-              videoSrc="https://www.w3schools.com/html/mov_bbb.mp4"
+              videoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779531628605-p8zpmh2n.mp4"
               mediaAnimation="blur-reveal"
               useInvertedBackground={false}
               containerClassName="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"

@@ -89,7 +89,7 @@ export default function LandingPage() {
             useInvertedBackground={false}
             features={[
               { id: "f1", title: "Luxury Goods", author: "Security", description: "High-security transit for watches and premium goods.", tags: ["Luxury"], imageSrc: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=800" },
-              { id: "f2", title: "Auto Logistics", author: "Protection", description: "Specialized vehicle shipping with expert strapping.", tags: ["Vehicles"], imageSrc: "https://images.unsplash.com/photo-1594993875739-1661d92f22ad?q=80&w=800" }
+              { id: "f2", title: "Auto Logistics", author: "Protection", description: "Specialized vehicle shipping with expert strapping.", tags: ["Vehicles"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/tmp/auto-logistics-1779540384242-e4e4e752.png" }
             ]}
             title="We Ship the Spectrum."
             description="Large or Small, We Handle It All. Click for details."
@@ -107,7 +107,7 @@ export default function LandingPage() {
             title="Operational Standards"
             description="Why choose Sir James Delivery?"
             faqsAnimation="slide-up"
-            imageSrc="https://images.unsplash.com/photo-1589793466487-14e414c8d356?q=80&w=800"
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/tmp/operational-standards-1779540426851-3230ee44.png"
           />
         </div>
 

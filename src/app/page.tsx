@@ -16,7 +16,6 @@ export default function LandingPage() {
     { name: "How It Works", id: "/how-it-works" },
     { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
     { name: "Gallery", id: "/gallery" },
-    { name: "Loading Gallery", id: "/loading-gallery" },
     { name: "Contact", id: "/contact" },
   ];
 
@@ -64,7 +63,6 @@ export default function LandingPage() {
       tag="Daily Shipments • Fully Insured • 100% Customs Cleared"
       buttons={[
         { text: "Read Transit Guarantee", href: "/the-sir-james-transit-guarantee" },
-        { text: "View Heavy-Duty Loading", href: "/loading-gallery" },
         { text: "Contact", href: "/contact" },
       ]}
       imageSrc="http://img.b2bpic.net/free-photo/technological-futuristic-holograms-logistics-means-transport_23-2151663056.jpg"

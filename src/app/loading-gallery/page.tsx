@@ -6,7 +6,7 @@ import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleAp
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 
-export default function GalleryPage() {
+export default function LoadingGalleryPage() {
   const navItems = [
     { name: "Services", id: "/services" },
     { name: "How It Works", id: "/how-it-works" },
@@ -16,11 +16,15 @@ export default function GalleryPage() {
     { name: "Contact", id: "/contact" },
   ];
 
-  const galleryItems = [
-    { id: "p1", brand: "Logistics", name: "Heavy Duty Loading", price: "Secure", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
-    { id: "p2", brand: "Logistics", name: "Vehicle Securement", price: "Verified", rating: 5, reviewCount: "2026", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
-    { id: "p3", brand: "Logistics", name: "Industrial Machinery", price: "Handled", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
-    { id: "p4", brand: "Logistics", name: "Bulk Inventory", price: "Tracking", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg" }
+  const loadingImages = [
+    { id: "1", brand: "Logistics", name: "Precision Loading", price: "Secure", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg" },
+    { id: "2", brand: "Logistics", name: "Heavy Duty Lifting", price: "Verified", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg" },
+    { id: "3", brand: "Logistics", name: "Container Security", price: "Managed", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/technological-futuristic-holograms-logistics-means-transport_23-2151663056.jpg" },
+    { id: "4", brand: "Logistics", name: "Warehouse Flow", price: "Tracking", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/man-driving-warehouse-loading-machine_23-2148923134.jpg" },
+    { id: "5", brand: "Logistics", name: "Cargo Prep", price: "Stable", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662916.jpg" },
+    { id: "6", brand: "Logistics", name: "Export Ready", price: "Ready", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/top-view-empty-perfume-bottle_23-2149234340.jpg" },
+    { id: "7", brand: "Logistics", name: "Heavy Gear", price: "Strong", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/middle-aged-trucker-front-truck-trailer-with-cars_342744-1283.jpg" },
+    { id: "8", brand: "Logistics", name: "Final Sweep", price: "Clear", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/truck-electric-car-highway-symbol-transport-evolution_169016-70036.jpg" },
   ];
 
   return (
@@ -46,13 +50,13 @@ export default function GalleryPage() {
 
         <div id="gallery" data-section="gallery" className="py-20">
           <ProductCardTwo
-            title="Professional Cargo Logistics"
-            description="An alternating grid showcase of our premium packing, loading, and tracking standards for Dubai to Ghana freight."
-            gridVariant="two-columns-alternating-heights"
-            animationType="slide-up"
+            title="Heavy-Duty Loading Mastery"
+            description="Responsive motion showcase of our precise handling processes for all heavy cargo."
+            gridVariant="four-items-2x2-equal-grid"
+            animationType="blur-reveal"
             textboxLayout="split"
             useInvertedBackground={false}
-            products={galleryItems}
+            products={loadingImages}
           />
         </div>
 

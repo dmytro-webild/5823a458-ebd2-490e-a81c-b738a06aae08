@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
-import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
+import FeatureCardSix from '@/components/sections/feature/FeatureCardSix';
 
 export default function GalleryPage() {
   const navItems = [
@@ -44,22 +44,16 @@ export default function GalleryPage() {
           />
         </div>
 
-        {galleryItems.map((item, index) => (
-          <div key={index} id={`gallery-${index}`} data-section="gallery" className="py-24 border-b border-gray-100">
-            <FeatureCardOne
-              title={item.title}
-              description={item.description}
-              gridVariant="uniform-all-items-equal"
+        <div id="gallery" data-section="gallery" className="py-24">
+            <FeatureCardSix
+              title="Our Logistics Gallery"
+              description="A look at our professional cargo handling services."
               animationType="slide-up"
               textboxLayout="split"
               useInvertedBackground={false}
-              features={[item]}
-              containerClassName="max-w-7xl mx-auto px-6"
-              gridClassName="gap-12"
-              cardClassName="min-h-[500px]"
+              features={galleryItems}
             />
-          </div>
-        ))}
+        </div>
 
         <div id="footer" data-section="footer">
           <FooterSimple

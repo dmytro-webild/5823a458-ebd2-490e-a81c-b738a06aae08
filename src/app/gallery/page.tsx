@@ -48,7 +48,6 @@ export default function GalleryPage() {
             <FeatureCardSix
               title="Our Logistics Gallery"
               description="A look at our professional cargo handling services."
-              animationType="slide-up"
               textboxLayout="split"
               useInvertedBackground={false}
               features={galleryItems}

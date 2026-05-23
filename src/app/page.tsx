@@ -137,7 +137,6 @@ export default function LandingPage() {
       <FeatureCardSix
         title="Professional Cargo Logistics"
         description="A free-flowing, spacious view of our premium packing and logistics standards."
-        animationType="slide-up"
         textboxLayout="split"
         useInvertedBackground={false}
         features={galleryItems}

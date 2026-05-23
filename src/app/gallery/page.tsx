@@ -44,20 +44,21 @@ export default function GalleryPage() {
           />
         </div>
 
-        <div id="gallery" data-section="gallery" className="py-20">
-          <FeatureCardOne
-            title="Professional Cargo Logistics"
-            description="Our premium packing, loading, and tracking standards."
-            gridVariant="two-columns-alternating-heights"
-            carouselMode="auto"
-            animationType="slide-up"
-            textboxLayout="split"
-            useInvertedBackground={false}
-            features={galleryItems}
-            gridClassName="gap-8 md:gap-12 lg:gap-16"
-            cardClassName="min-h-[400px] md:min-h-[500px]"
-          />
-        </div>
+        {galleryItems.map((item, index) => (
+          <div key={index} id={`gallery-${index}`} data-section="gallery" className="py-12 border-b border-gray-100">
+            <FeatureCardOne
+              title={item.title}
+              description={item.description}
+              gridVariant="two-columns-alternating-heights"
+              animationType="slide-up"
+              textboxLayout="split"
+              useInvertedBackground={false}
+              features={[item]}
+              gridClassName="gap-8"
+              cardClassName="min-h-[400px]"
+            />
+          </div>
+        ))}
 
         <div id="footer" data-section="footer">
           <FooterSimple

@@ -49,7 +49,7 @@ export default function GalleryPage() {
             <FeatureCardOne
               title={item.title}
               description={item.description}
-              gridVariant="two-columns-alternating-heights"
+              gridVariant="uniform-all-items-equal"
               animationType="slide-up"
               textboxLayout="split"
               useInvertedBackground={false}

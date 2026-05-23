@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
-import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
+import MetricCardEleven from '@/components/sections/metrics/MetricCardEleven';
 
 export default function GalleryPage() {
   const navItems = [
@@ -37,19 +37,17 @@ export default function GalleryPage() {
         </div>
 
         <div id="gallery" data-section="gallery" className="py-20">
-          <FeatureCardTwentyFour
+          <MetricCardEleven
             animationType="slide-up"
-            textboxLayout="split-actions"
-            useInvertedBackground={false}
             title="Cargo Packing Gallery"
-            description="See how we professionally secure your items for the journey from Dubai to Ghana. Site administrators can upload new images directly below."
-            buttons={[
-              { text: "Upload Image", onClick: () => alert("Admin Access Required: This feature connects to the secure media management dashboard.") }
-            ]}
-            features={[
-              { id: "g1", title: "Luxury Protection", author: "Security", description: "High-grade crates for luxury goods.", tags: ["Luxury"], imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
-              { id: "g2", title: "Vehicle Securement", author: "Logistics", description: "Professional strapping for vehicles.", tags: ["Auto"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
-              { id: "g3", title: "Heavy Gear", author: "Industrial", description: "Robust loading techniques for machinery.", tags: ["Industrial"], imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" }
+            description="Our professional packing standards ensure your goods travel from Dubai to Ghana with maximum protection."
+            textboxLayout="default"
+            useInvertedBackground={false}
+            metrics={[
+              { id: "g1", value: "Secured", title: "Luxury Protection", description: "High-grade crates for luxury goods.", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
+              { id: "g2", value: "Strapped", title: "Vehicle Securement", description: "Professional vehicle loading standards.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
+              { id: "g3", value: "Handled", title: "Industrial Gear", description: "Robust loading techniques for machinery.", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
+              { id: "g4", value: "Inventory", title: "Bulk Logistics", description: "Organized inventory management and tracking.", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg" }
             ]}
           />
         </div>

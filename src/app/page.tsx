@@ -137,7 +137,7 @@ export default function LandingPage() {
       <ProductCardTwo
         title="Professional Cargo Logistics"
         description="An alternating grid showcase of our premium packing, loading, and tracking standards for Dubai to Ghana freight."
-        gridVariant="two-columns-alternating-heights"
+        gridVariant="four-items-2x2-equal-grid"
         animationType="slide-up"
         textboxLayout="split"
         useInvertedBackground={false}

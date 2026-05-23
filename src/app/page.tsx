@@ -24,7 +24,7 @@ export default function LandingPage() {
     { id: "p1", brand: "Logistics", name: "Heavy Duty Loading", price: "Secure", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
     { id: "p2", brand: "Logistics", name: "Vehicle Securement", price: "Verified", rating: 5, reviewCount: "2026", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
     { id: "p3", brand: "Logistics", name: "Industrial Machinery", price: "Handled", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
-    { id: "p4", brand: "Logistics", name: "Bulk Inventory", price: "Tracking", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg" }
+    { id: "p4", brand: "Logistics", name: "Bulk Inventory", price: "Tracking", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg?_wi=1" }
   ];
 
   return (
@@ -55,7 +55,7 @@ export default function LandingPage() {
       title="From Dubai to Ghana: Your Cargo, Delivered Safely and Fast."
       description="Whether it’s luxury watches, vehicles, or heavy industrial gym machinery, Sir James Delivery Company safely transports your goods from the heart of Dubai straight to our secure warehouse in Ghana. No delays. No hidden fees."
       testimonials={[
-        { name: "Kwame O.", handle: "", testimonial: "Excellent service. My heavy equipment arrived in perfect condition.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg" },
+        { name: "Kwame O.", handle: "", testimonial: "Excellent service. My heavy equipment arrived in perfect condition.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg?_wi=2" },
         { name: "Amina B.", handle: "", testimonial: "The best shipping partner for my perfume wholesale business.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662916.jpg" },
         { name: "John S.", handle: "", testimonial: "Vehicle transport from Dubai was seamless and fast.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662944.jpg" },
         { name: "Sarah L.", handle: "", testimonial: "Great handling of industrial gym machines. Very professional.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/top-view-empty-perfume-bottle_23-2149234340.jpg" },

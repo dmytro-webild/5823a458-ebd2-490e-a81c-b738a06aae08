@@ -136,13 +136,15 @@ export default function LandingPage() {
   <div id="gallery" data-section="gallery" className="py-20">
       <FeatureCardOne
         title="Professional Cargo Logistics"
-        description="A free-flowing view of our premium packing and logistics standards."
+        description="A free-flowing, spacious view of our premium packing and logistics standards."
         animationType="slide-up"
-        carouselMode="auto"
-        gridVariant="three-columns-all-equal-width"
+        carouselMode="buttons"
+        gridVariant="bento-grid"
         textboxLayout="split"
         useInvertedBackground={false}
         features={galleryItems}
+        containerClassName="max-w-7xl mx-auto px-8"
+        gridClassName="gap-16"
       />
   </div>
 

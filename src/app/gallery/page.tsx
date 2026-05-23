@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
-import MetricCardEleven from '@/components/sections/metrics/MetricCardEleven';
+import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 
 export default function GalleryPage() {
   const navItems = [
@@ -13,6 +13,13 @@ export default function GalleryPage() {
     { name: "Guarantee", id: "/the-sir-james-transit-guarantee" },
     { name: "Gallery", id: "/gallery" },
     { name: "Contact", id: "/contact" },
+  ];
+
+  const galleryItems = [
+    { id: "p1", brand: "Logistics", name: "Heavy Duty Loading", price: "Secure", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
+    { id: "p2", brand: "Logistics", name: "Vehicle Securement", price: "Verified", rating: 5, reviewCount: "2026", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
+    { id: "p3", brand: "Logistics", name: "Industrial Machinery", price: "Handled", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
+    { id: "p4", brand: "Logistics", name: "Bulk Inventory", price: "Tracking", rating: 5, reviewCount: "2026", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg" }
   ];
 
   return (
@@ -37,18 +44,14 @@ export default function GalleryPage() {
         </div>
 
         <div id="gallery" data-section="gallery" className="py-20">
-          <MetricCardEleven
+          <ProductCardTwo
+            title="Professional Cargo Logistics"
+            description="An alternating grid showcase of our premium packing, loading, and tracking standards for Dubai to Ghana freight."
+            gridVariant="two-columns-alternating-heights"
             animationType="slide-up"
-            title="Cargo Packing Gallery"
-            description="Our professional packing standards ensure your goods travel from Dubai to Ghana with maximum protection."
-            textboxLayout="default"
+            textboxLayout="split"
             useInvertedBackground={false}
-            metrics={[
-              { id: "g1", value: "Secured", title: "Luxury Protection", description: "High-grade crates for luxury goods.", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg?_wi=2" },
-              { id: "g2", value: "Strapped", title: "Vehicle Securement", description: "Professional vehicle loading standards.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1779315072666-rnat9as3.jpg?_wi=2" },
-              { id: "g3", value: "Handled", title: "Industrial Gear", description: "Robust loading techniques for machinery.", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg?_wi=2" },
-              { id: "g4", value: "Inventory", title: "Bulk Logistics", description: "Organized inventory management and tracking.", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg" }
-            ]}
+            products={galleryItems}
           />
         </div>
 

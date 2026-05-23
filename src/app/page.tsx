@@ -120,7 +120,10 @@ export default function LandingPage() {
 
         <div id="footer" data-section="footer">
           <FooterSimple
-            columns={[]}
+            columns={[
+              { title: "Services", items: [{ label: "Shipping", href: "/services" }, { label: "Gallery", href: "/gallery" }] },
+              { title: "Support", items: [{ label: "Contact", href: "/contact" }, { label: "Guarantee", href: "/the-sir-james-transit-guarantee" }] }
+            ]}
             bottomLeftText="© 2026 Sir James Delivery Company."
             bottomRightText="Safe. Swift. Secure."
           />

@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import FeatureCardSix from '@/components/sections/feature/FeatureCardSix';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function GalleryPage() {
   const [galleryItems, setGalleryItems] = useState([
@@ -15,10 +15,22 @@ export default function GalleryPage() {
     { title: "Bulk Inventory", description: "Real-time Tracking", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg" }
   ]);
 
+  useEffect(() => {
+    const saved = localStorage.getItem('sir-james-gallery-items');
+    if (saved) {
+      try {
+        setGalleryItems(JSON.parse(saved));
+      } catch (e) {
+        console.error("Error loading gallery items", e);
+      }
+    }
+  }, []);
+
   const handleFileUpload = (index: number, newImageUrl: string) => {
     const updatedItems = [...galleryItems];
     updatedItems[index].imageSrc = newImageUrl;
     setGalleryItems(updatedItems);
+    localStorage.setItem('sir-james-gallery-items', JSON.stringify(updatedItems));
   };
 
   const navItems = [

@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
-import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
+import ProductCatalog from '@/components/ecommerce/productCatalog/ProductCatalog';
 
 export default function LoadingGalleryPage() {
   const navItems = [
@@ -16,15 +16,10 @@ export default function LoadingGalleryPage() {
     { name: "Contact", id: "/contact" },
   ];
 
-  const loadingImages = [
-    { id: "1", brand: "Logistics", name: "Precision Loading", price: "Secure", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg" },
-    { id: "2", brand: "Logistics", name: "Heavy Duty Lifting", price: "Verified", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg" },
-    { id: "3", brand: "Logistics", name: "Container Security", price: "Managed", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/technological-futuristic-holograms-logistics-means-transport_23-2151663056.jpg" },
-    { id: "4", brand: "Logistics", name: "Warehouse Flow", price: "Tracking", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/man-driving-warehouse-loading-machine_23-2148923134.jpg" },
-    { id: "5", brand: "Logistics", name: "Cargo Prep", price: "Stable", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662916.jpg" },
-    { id: "6", brand: "Logistics", name: "Export Ready", price: "Ready", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/top-view-empty-perfume-bottle_23-2149234340.jpg" },
-    { id: "7", brand: "Logistics", name: "Heavy Gear", price: "Strong", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/middle-aged-trucker-front-truck-trailer-with-cars_342744-1283.jpg" },
-    { id: "8", brand: "Logistics", name: "Final Sweep", price: "Clear", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/truck-electric-car-highway-symbol-transport-evolution_169016-70036.jpg" },
+  const loadingProducts = [
+    { id: "1", brand: "Logistics", name: "Precision Loading", price: "$100", rating: 5, reviewCount: "45", imageSrc: "http://img.b2bpic.net/free-photo/forklift-operator-loading-cargo-while-working-warehouse-his-colleagues-are-background_637285-4210.jpg" },
+    { id: "2", brand: "Logistics", name: "Heavy Duty Lifting", price: "$250", rating: 5, reviewCount: "32", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-foundation-containers-arrangement_23-2149705544.jpg" },
+    { id: "3", brand: "Logistics", name: "Container Security", price: "$150", rating: 4, reviewCount: "28", imageSrc: "http://img.b2bpic.net/free-photo/technological-futuristic-holograms-logistics-means-transport_23-2151663056.jpg" },
   ];
 
   return (
@@ -49,14 +44,9 @@ export default function LoadingGalleryPage() {
         </div>
 
         <div id="gallery" data-section="gallery" className="py-20">
-          <ProductCardTwo
-            title="Heavy-Duty Loading Mastery"
-            description="Responsive motion showcase of our precise handling processes for all heavy cargo."
-            gridVariant="four-items-2x2-equal-grid"
-            animationType="blur-reveal"
-            textboxLayout="split"
-            useInvertedBackground={false}
-            products={loadingImages}
+          <ProductCatalog
+            layout="section"
+            products={loadingProducts}
           />
         </div>
 

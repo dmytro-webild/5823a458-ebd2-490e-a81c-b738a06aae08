@@ -48,12 +48,14 @@ export default function GalleryPage() {
           <FeatureCardOne
             title="Professional Cargo Logistics"
             description="Our premium packing, loading, and tracking standards."
-            gridVariant="three-columns-all-equal-width"
+            gridVariant="two-columns-alternating-heights"
             carouselMode="auto"
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={false}
             features={galleryItems}
+            gridClassName="gap-8 md:gap-12 lg:gap-16"
+            cardClassName="min-h-[400px] md:min-h-[500px]"
           />
         </div>
 

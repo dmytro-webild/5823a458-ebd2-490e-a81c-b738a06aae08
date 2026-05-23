@@ -15,6 +15,12 @@ export default function GalleryPage() {
     { title: "Bulk Inventory", description: "Real-time Tracking", imageSrc: "http://img.b2bpic.net/free-photo/logistics-means-transport-together-with-technological-futuristic-holograms_23-2151662913.jpg" }
   ]);
 
+  const handleFileUpload = (index: number, newImageUrl: string) => {
+    const updatedItems = [...galleryItems];
+    updatedItems[index].imageSrc = newImageUrl;
+    setGalleryItems(updatedItems);
+  };
+
   const navItems = [
     { name: "Services", id: "/services" },
     { name: "How It Works", id: "/how-it-works" },

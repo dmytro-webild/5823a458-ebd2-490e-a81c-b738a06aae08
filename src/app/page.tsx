@@ -62,7 +62,7 @@ export default function LandingPage() {
               { text: "Read Transit Guarantee", href: "/the-sir-james-transit-guarantee" },
               { text: "Contact", href: "/contact" },
             ]}
-            imageSrc="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1200&_wi=2"
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/tmp/auto-logistics-1779540384242-e4e4e752.png"
           />
         </div>
 

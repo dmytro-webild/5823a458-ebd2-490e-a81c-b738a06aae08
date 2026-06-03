@@ -62,7 +62,7 @@ export default function LandingPage() {
               { text: "Read Transit Guarantee", href: "/the-sir-james-transit-guarantee" },
               { text: "Contact", href: "/contact" },
             ]}
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/tmp/auto-logistics-1779540384242-e4e4e752.png"
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/uploaded-1780445382984-llo1005u.png"
           />
         </div>
 
@@ -88,7 +88,7 @@ export default function LandingPage() {
             textboxLayout="split"
             useInvertedBackground={false}
             features={[
-              { id: "f1", title: "Luxury Goods", author: "Security", description: "High-security transit for watches and premium goods.", tags: ["Luxury"], imageSrc: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=800" },
+              { id: "f1", title: "Luxury Goods", author: "Security", description: "High-security transit for watches and premium goods.", tags: ["Luxury"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/tmp/ultra-realistic-picture-of-a-rolex-and-l-1780445488851-099b579a.png" },
               { id: "f2", title: "Auto Logistics", author: "Protection", description: "Specialized vehicle shipping with expert strapping.", tags: ["Vehicles"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dyzp7sGs874KHVqcZpKRlG0BRH/tmp/auto-logistics-1779540384242-e4e4e752.png" }
             ]}
             title="We Ship the Spectrum."
